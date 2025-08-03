@@ -4,6 +4,11 @@ import { BrowserRouter } from "react-router-dom";
 import { Toaster } from 'sonner';
 import App from "./App.tsx";
 import "./index.css";
+
+// 确保Tailwind CSS正确加载
+if (import.meta.env.DEV) {
+  console.log('Tailwind CSS loaded successfully in development mode');
+}
  
  // 确保Tailwind CSS正确加载
  if (process.env.NODE_ENV === 'development') {
