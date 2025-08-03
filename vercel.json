@@ -16,6 +16,5 @@
       "dest": "/index.html"
     }
   ],
-  "installCommand": "npm install",
-  "frameworkPreset": "vite"
+  "installCommand": "npm install"
 }
