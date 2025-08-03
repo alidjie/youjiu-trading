@@ -17,8 +17,5 @@
     }
   ],
   "installCommand": "npm install",
-  "environment": {
-    "NODE_ENV": "production"
-  },
   "frameworkPreset": "vite"
 }
