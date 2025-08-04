@@ -224,13 +224,13 @@ export default function Contact() {
                       <i className="fa-brands fa-linkedin"></i>
                     </a>
                     <a href="#" className="bg-blue-600 hover:bg-blue-700 text-white w-12 h-12 rounded-full flex items-center justify-center transition-colors">
-                      <i class="fa-brands fa-facebook"></i>
+                         <i className="fa-brands fa-facebook"></i>
                     </a>
                     <a href="#" className="bg-blue-600 hover:bg-blue-700 text-white w-12 h-12 rounded-full flex items-center justify-center transition-colors">
-                      <i class="fa-brands fa-instagram"></i>
+                         <i className="fa-brands fa-instagram"></i>
                     </a>
                     <a href="#" className="bg-blue-600 hover:bg-blue-700 text-white w-12 h-12 rounded-full flex items-center justify-center transition-colors">
-                      <i class="fa-brands fa-twitter"></i>
+                         <i className="fa-brands fa-twitter"></i>
                     </a>
                   </div>
                 </div>
@@ -346,7 +346,7 @@ export default function Contact() {
                       >
                         {isSubmitting ? (
                           <>
-                            <i class="fa-solid fa-spinner fa-spin mr-2"></i> Sending...
+                           <i className="fa-solid fa-spinner fa-spin mr-2"></i> Sending...
                           </>
                         ) : (
                           <>

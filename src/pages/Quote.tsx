@@ -163,7 +163,7 @@ export default function Quote() {
             
             {/* Mobile menu button */}
             <button className="md:hidden text-blue-900">
-              <i class="fa-solid fa-bars text-xl"></i>
+               <i className="fa-solid fa-bars text-xl"></i>
             </button>
           </div>
         </div>

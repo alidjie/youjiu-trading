@@ -1,4 +1,3 @@
-
 interface FAQItem {
   question: string;
   answer: {
@@ -7,13 +6,16 @@ interface FAQItem {
   keywords: string[];
   category: string;
 }
-
+ 
 // 知识库数据定义
 export const knowledgeBase: FAQItem[] = [
   {
     question: "你们提供哪些产品？",
     answer: {
-      en: "We mainly provide four categories of products: Magnetic Materials, Magnetic Filters, Enameled Wire, and Agricultural Machinery. For specific product specifications and details, please check our product page.",
+       en: {
+         short: "We provide magnetic materials, filters, enameled wire, and agricultural machinery.",
+         detailed: "We mainly provide four categories of products: Magnetic Materials, Magnetic Filters, Enameled Wire, and Agricultural Machinery. For specific product specifications and details, please check our product page."
+       },
       fr: "Nous proposons principalement quatre catégories de produits : matériaux magnétiques, filtres magnétiques, fil émaillé et machines agricoles. Pour les spécifications et les détails des produits, veuillez consulter notre page produit.",
       de: "Wir bieten hauptsächlich vier Produktkategorien: Magnetmaterialien, Magnetfilter, Emailldraht und landwirtschaftliche Maschinen. Für spezifische Produktspezifikationen und Details besuchen Sie bitte unsere Produktseite.",
       es: "Principalmente proporcionamos cuatro categorías de productos: Materiales magnéticos, Filtros magnéticos, Alambre esmaltado y Maquinaria agrícola. Para especificaciones y detalles de productos específicos, consulte nuestra página de productos.",
@@ -84,6 +86,7 @@ export const knowledgeBase: FAQItem[] = [
       ja: "標準製品の納期は通常15-20日、カスタム製品は25-35日です。これは注文数量と製品の複雑さによって異なります。注文確認後、正確な生産と納期スケジュールを提供いたします。",
       ar: "مدة توصيل المنتجات القياسية عادة 15-20 يومًا، والمنتجات المخصصة 25-35 يومًا، اعتمادًا على كمية الطلب وتعقيد المنتج. سأقدم جدول إنتاج وتوصيل دقيق بعد تأكيد الطلب.",
       ru: "Срок доставки стандартных продуктов обычно 15-20 дней, а для индивидуальных продуктов 25-35 дней в зависимости от количества заказа и сложности продукта. После подтверждения заказа я предоставлю точный график производства и доставки.",
+
       it: "Il tempo di consegna per i prodotti standard è solitamente 15-20 giorni e per i prodotti personalizzati 25-35 giorni, a seconda della quantità ordinata e della complessità del prodotto. Fornirò un programma di produzione e consegna accurato dopo la conferma dell'ordine.",
       pt: "O prazo de entrega para produtos padrão é geralmente de 15-20 dias e para produtos personalizados de 25-35 dias, dependendo da quantidade encomendada e complexidade do produto. Fornecerei um cronograma de produção e entrega preciso após a confirmação do pedido."
     },
@@ -97,9 +100,9 @@ export const knowledgeBase: FAQItem[] = [
       fr: "Vous pouvez soumettre une demande de devis via notre page 'Get Quote' sur le site web ou contacter directement mon équipe commerciale. Pour fournir un devis précis, veuillez fournir le modèle de produit, les spécifications, la quantité et les exigences spéciales (le cas échéant). Je réponds généralement à votre demande de devis dans les 24 heures.",
       de: "Sie können eine Angebotsanfrage über unsere 'Get Quote'-Seite auf der Website einreichen oder mein Verkaufsteam direkt kontaktieren. Um ein genaues Angebot zu erstellen, bitten wir Sie, Produktmodell, Spezifikationen, Menge und besondere Anforderungen (falls vorhanden) anzugeben. Ich antworte normalerweise innerhalb von 24 Stunden auf Ihre Angebotsanfrage.",
       es: "Puede enviar una solicitud de cotización a través de nuestra página 'Get Quote' en el sitio web o contactar directamente a mi equipo de ventas. Para proporcionar una cotización precisa, por favor proporcione el modelo de producto, especificaciones, cantidad y requisitos especiales (si los hay). Por lo general, respondo a su solicitud de cotización dentro de las 24 horas.",
-      ja: "ウェブサイトの「Get Quote」ページから見積もりリクエストを送信するか、直接営業チームにご連絡いただけます。正確な見積もりを提供するために、製品モデル、仕様、数量、特別な要求事項（あれば）をご提供ください。通常、24時間以内に見積もりリクエストにお返事いたします。",
+      ja: "ウェブサイトの「Get Quote」ページから見積もりリクエストを送信するか、直接営業チームにご連絡いただけます。正確な見積もりを提供するために、製品モデル、仕様、数量、特別な要求事項（あれば）をご提供ください。通常、24時間以内に見積もりリクエストにお返事いたします.",
       ar: "يمكنك تقديم طلب سعر من خلال صفحة 'Get Quote' على الموقع أو الاتصال مباشرة بفريق المبيعات الخاص بي. لكي نقدم سعر دقيق، يرجى تقديم نموذج المنتج والت спецификации والكمية والتребования الخاصة (إذا كانت موجودة). عادةً ما أرد على طلب السعر الخاص بك خلال 24 ساعة.",
-      ru: "Вы можете отправить запрос на котировку через нашу страницу 'Get Quote' на веб-сайте или напрямую связаться с моей sales-командой. Чтобы предоставить точную котировку, укажите модель продукта, спецификации, количество и специальные требования (если есть). Обычно я отвечаю на запросы на котировку в течение 24 часов.",
+      ru: "Вы можете отправить запрос на котировку через нашу страницу 'Get Quote' на веб-сайте или напрямую связаться с моей sales-командой. чтобы предоставить точную котировку, укажите модель продукта, спецификации, количество и специальные требования (если есть). Обычно я отвечаю на запросы на котировку в течение 24 часов.",
       it: "Puoi inviare una richiesta di preventivo tramite la nostra pagina 'Get Quote' sul sito web o contattare direttamente il mio team commerciale. Per fornire un preventivo accurato, si prega di indicare modello prodotto, specifiche, quantità e requisiti speciali (se presenti). Di solito rispondo alla tua richiesta di preventivo entro 24 ore.",
       pt: "Você pode enviar uma solicitação de orçamento por meio de nossa página 'Get Quote' no site ou entrar em contato diretamente com minha equipe de vendas. Para fornecer um orçamento preciso, informe modelo do produto, especificações, quantidade e requisitos especiais (se houver). Normalmente respondo à sua solicitação de orçamento dentro de 24 horas."
     },

@@ -204,7 +204,7 @@ All our products meet international quality standards and are backed by our comp
                     <div className="flex justify-between items-start mb-3">
                       <h3 className="text-xl font-bold text-blue-900">{product.name}</h3>
                       <div className="flex items-center">
-                        <i class="fa-solid fa-star text-yellow-400 mr-1"></i>
+                         <i className="fa-solid fa-star text-yellow-400 mr-1"></i>
                         <span className="font-semibold">{product.rating}</span>
                       </div>
                     </div>
