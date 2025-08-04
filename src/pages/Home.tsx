@@ -82,9 +82,9 @@ export default function Home() {
             </nav>
             
             {/* Mobile menu button */}
-            <button className="md:hidden text-blue-900">
-              <i class="fa-solid fa-bars text-xl"></i>
-            </button>
+             <button className="md:hidden text-blue-900">
+               <i className="fa-solid fa-bars text-xl"></i>
+             </button>
           </div>
         </div>
       </header>
