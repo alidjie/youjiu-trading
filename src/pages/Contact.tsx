@@ -350,7 +350,7 @@ export default function Contact() {
                           </>
                         ) : (
                           <>
-                            Send Message <i class="fa-solid fa-paper-plane ml-2"></i>
+                            Send Message <i className="fa-solid fa-paper-plane ml-2"></i>
                           </>
                         )}
                       </button>

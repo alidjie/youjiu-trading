@@ -1,4 +1,4 @@
-// AI客服知识库
+
 interface FAQItem {
   question: string;
   answer: {
@@ -8,7 +8,7 @@ interface FAQItem {
   category: string;
 }
 
-// 知识库数据
+// 知识库数据定义
 export const knowledgeBase: FAQItem[] = [
   {
     question: "你们提供哪些产品？",
@@ -140,7 +140,7 @@ export const knowledgeBase: FAQItem[] = [
   }
 ];
 
-// 简单的问题匹配函数
+// 问题匹配函数
 export function getAnswer(question: string, language: string = 'en'): string {
   const lowerQuestion = question.toLowerCase();
   

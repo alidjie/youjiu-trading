@@ -690,7 +690,7 @@ export default function ProductDetail() {
                   <i className="fa-solid fa-envelope text-blue-300 mr-3"></i>
                    <span className="text-blue-200">info@aluew.com</span>
                    <li className="flex items-center">
-                     <i class="fa-solid fa-globe text-blue-300 mr-3"></i>
+                     <i className="fa-solid fa-globe text-blue-300 mr-3"></i>
                      <span className="text-blue-200">https://www.aluew.com</span>
                    </li>
                 </li>

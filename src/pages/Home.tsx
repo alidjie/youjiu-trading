@@ -148,9 +148,9 @@ All our products meet international quality standards and are backed by our comp
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {companyData.strengths.map((strength, index) => (
                     <div key={index} className="bg-blue-50 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-                      <div className="text-blue-600 text-2xl mb-3">
-                        <i class="fa-solid fa-check-circle"></i>
-                      </div>
+                       <div className="text-blue-600 text-2xl mb-3">
+                         <i className="fa-solid fa-check-circle"></i>
+                       </div>
                       <h3 className="text-xl font-semibold text-blue-900 mb-2">{strength.title}</h3>
                       <p className="text-gray-600">{strength.description}</p>
                     </div>
@@ -273,12 +273,12 @@ All our products meet international quality standards and are backed by our comp
                 <a href="#" className="text-blue-200 hover:text-white transition-colors">
                   <i className="fa-brands fa-linkedin text-xl"></i>
                 </a>
-                <a href="#" className="text-blue-200 hover:text-white transition-colors">
-                  <i class="fa-brands fa-facebook text-xl"></i>
-                </a>
-                <a href="#" className="text-blue-200 hover:text-white transition-colors">
-                  <i class="fa-brands fa-instagram text-xl"></i>
-                </a>
+                 <a href="#" className="text-blue-200 hover:text-white transition-colors">
+                   <i className="fa-brands fa-facebook text-xl"></i>
+                 </a>
+                 <a href="#" className="text-blue-200 hover:text-white transition-colors">
+                   <i className="fa-brands fa-instagram text-xl"></i>
+                 </a>
               </div>
             </div>
             
