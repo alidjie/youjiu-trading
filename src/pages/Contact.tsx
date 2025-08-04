@@ -430,15 +430,15 @@ export default function Contact() {
               <h4 className="text-lg font-semibold mb-6">Contact Us</h4>
               <ul className="space-y-4">
                 <li className="flex items-start">
-                  <i class="fa-solid fa-map-marker-alt text-blue-300 mt-1 mr-3"></i>
+                   <i className="fa-solid fa-map-marker-alt text-blue-300 mt-1 mr-3"></i>
                   <span className="text-blue-200">Taizhou, Zhejiang Province, China</span>
                 </li>
                 <li className="flex items-center">
-                  <i class="fa-solid fa-phone text-blue-300 mr-3"></i>
+                   <i className="fa-solid fa-phone text-blue-300 mr-3"></i>
                   <span className="text-blue-200">+86 123 4567 8910</span>
                 </li>
                 <li className="flex items-center">
-                  <i class="fa-solid fa-envelope text-blue-300 mr-3"></i>
+                   <i className="fa-solid fa-envelope text-blue-300 mr-3"></i>
                    <span className="text-blue-200">info@aluew.com</span>
                    <div className="mt-6">
                      <a href="https://www.aluew.com" className="text-white hover:text-blue-300 transition-colors">

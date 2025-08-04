@@ -11,20 +11,17 @@ interface FAQItem {
 export const knowledgeBase: FAQItem[] = [
   {
     question: "你们提供哪些产品？",
-    answer: {
-       en: {
-         short: "We provide magnetic materials, filters, enameled wire, and agricultural machinery.",
-         detailed: "We mainly provide four categories of products: Magnetic Materials, Magnetic Filters, Enameled Wire, and Agricultural Machinery. For specific product specifications and details, please check our product page."
-       },
-      fr: "Nous proposons principalement quatre catégories de produits : matériaux magnétiques, filtres magnétiques, fil émaillé et machines agricoles. Pour les spécifications et les détails des produits, veuillez consulter notre page produit.",
-      de: "Wir bieten hauptsächlich vier Produktkategorien: Magnetmaterialien, Magnetfilter, Emailldraht und landwirtschaftliche Maschinen. Für spezifische Produktspezifikationen und Details besuchen Sie bitte unsere Produktseite.",
-      es: "Principalmente proporcionamos cuatro categorías de productos: Materiales magnéticos, Filtros magnéticos, Alambre esmaltado y Maquinaria agrícola. Para especificaciones y detalles de productos específicos, consulte nuestra página de productos.",
-      ja: "当社は主に4つのカテゴリーの製品を提供しています：磁性材料、磁性フィルター、エナメル線、農業機械です。具体的な製品仕様と詳細については、製品ページをご覧ください。",
-      ar: "نحن نقدم أساسًا أربعة فئات من المنتجات: المواد المغناطيسية، المرشحات المغناطيسية، السلك المعدني، والمعدنات الزراعية. للحصول على المواصفات والتفاصيل الخاصة بالمنتجات، يرجى التحقق من صفحة المنتجات لدينا.",
-      ru: "Мы предлагаем в основном четыре категории продуктов: магнитные материалы, магнитные фильтры, эмалированный провод и сельскохозяйственная техника. Для конкретных спецификаций и деталей продуктов посетите нашу страницу продуктов.",
-      it: "Offriamo principalmente quattro categorie di prodotti: Materiali magnetici, Filtri magnetici, Filo smaltato e Macchinari agricoli. Per specifiche e dettagli sui prodotti, consultare la nostra pagina prodotti.",
-      pt: "Oferecemos principalmente quatro categorias de produtos: Materiais Magnéticos, Filtros Magnéticos, Fio Esmaltado e Máquinas Agrícolas. Para especificações e detalhes de produtos específicos, consulte nossa página de produtos."
-    },
+      answer: {
+        en: "We mainly provide four categories of products: Magnetic Materials, Magnetic Filters, Enameled Wire, and Agricultural Machinery. For specific product specifications and details, please check our product page.",
+        fr: "Nous proposons principalement quatre catégories de produits : matériaux magnétiques, filtres magnétiques, fil émaillé et machines agricoles. Pour les spécifications et les détails des produits, veuillez consulter notre page produit.",
+        de: "Wir bieten hauptsächlich vier Produktkategorien: Magnetmaterialien, Magnetfilter, Emailldraht und landwirtschaftliche Maschinen. Für spezifische Produktspezifikationen und Details besuchen Sie bitte unsere Produktseite.",
+        es: "Principalmente proporcionamos cuatro categorías de productos: Materiales magnéticos, Filtros magnéticos, Alambre esmaltado y Maquinaria agrícola. Para especificaciones y detalles de productos específicos, consulte nuestra página de productos.",
+        ja: "当社は主に4つのカテゴリーの製品を提供しています：磁性材料、磁性フィルター、エナメル線、農業機械です。具体的な製品仕様と詳細については、製品ページをご覧ください。",
+        ar: "نحن نقدم أساسًا أربعة فئات من المنتجات: المواد المغناطيسية، المرشحات المغناطيسية، السلك المعدني، والمعدنات الزراعية. للحصول على المواصفات والتفاصيل الخاصة بالمنتجات، يرجى التحقق من صفحة المنتجات لدينا.",
+        ru: "Мы предлагаем в основном четыре категории продуктов: магнитные материалы, магнитные фильтры, эмалированный провод и сельскохозяйственная техника. Для конкретных спецификаций и деталей продуктов посетите нашу страницу продуктов.",
+        it: "Offriamo principalmente quattro categorie di prodotti: Materiali magnetici, Filtri magnetici, Filo smaltato e Macchinari agricoli. Per specifiche e dettagli sui prodotti, consultare la nostra pagina prodotti.",
+        pt: "Oferecemos principalmente quatro categorias de produtos: Materiais Magnéticos, Filtros Magnéticos, Fio Esmaltado e Máquinas Agrícolas. Para especificações e detalhes de produtos específicos, consulte nossa página de produtos."
+      },
     keywords: ["产品", "提供", "种类", "类型"],
     category: "products"
   },

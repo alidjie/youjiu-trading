@@ -260,7 +260,7 @@ export default function Products() {
                   <span className="text-blue-200">Taizhou, Zhejiang Province, China</span>
                 </li>
                 <li className="flex items-center">
-                  <i class="fa-solid fa-phone text-blue-300 mr-3"></i>
+                   <i className="fa-solid fa-phone text-blue-300 mr-3"></i>
                   <span className="text-blue-200">+86 123 4567 8910</span>
                 </li>
                 <li className="flex items-center">
