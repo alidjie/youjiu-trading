@@ -229,10 +229,10 @@ export default function About() {
                     
                     <div className="flex justify-center mt-6 space-x-3">
                       <a href="#" className="text-gray-400 hover:text-blue-600 transition-colors">
-                        <i class="fa-brands fa-linkedin"></i>
+232:                        <i className="fa-brands fa-linkedin"></i>
                       </a>
                       <a href="#" className="text-gray-400 hover:text-blue-600 transition-colors">
-                        <i class="fa-solid fa-envelope"></i>
+                       <i className="fa-solid fa-envelope"></i>
                       </a>
                     </div>
                   </div>

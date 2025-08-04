@@ -79,9 +79,9 @@ export function getAnswer(question: string, language: string = 'en'): string {
   
   // 如果找到匹配项，返回对应语言的答案，否则返回默认回复
    if (matchedItem && matchedItem.answer) {
-     // @ts-expect-error 处理动态语言键访问
-     return matchedItem.answer[language] || matchedItem.answer['en'];
-   } else {
+      // @ts-expect-error 处理动态语言键访问
+       return matchedItem.answer[language] || matchedItem.answer['en'];
+    } else {
     const defaultResponses: Record<string, string> = {
       en: "Thank you for your inquiry. We need to further confirm your question. Please describe your needs in detail through the contact form or email (info@aluew.com), and our customer service team will reply to you as soon as possible.",
       fr: "Merci pour votre demande. Nous devons confirmer davantage votre question. Veuillez décrire vos besoins en détail via le formulaire de contact ou par e-mail (info@aluew.com), et notre équipe de service clientèle vous répondra dans les plus brefs délais.",

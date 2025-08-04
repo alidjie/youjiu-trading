@@ -89,7 +89,7 @@ export default function Contact() {
   }, [currentUser]);
   
   // Handle form input changes
-   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>, prev: any) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
     
@@ -172,7 +172,7 @@ export default function Contact() {
             
             {/* Mobile menu button */}
             <button className="md:hidden text-blue-900">
-              <i class="fa-solid fa-bars text-xl"></i>
+               <i className="fa-solid fa-bars text-xl"></i>
             </button>
           </div>
         </div>
@@ -211,7 +211,7 @@ export default function Contact() {
                         target={item.link.startsWith('http') ? '_blank' : '_self'}
                         rel={item.link.startsWith('http') ? 'noopener noreferrer' : ''}
                       >
-                        Contact <i class="fa-solid fa-arrow-right ml-2"></i>
+214:                        Contact <i className="fa-solid fa-arrow-right ml-2"></i>
                       </a>
                     </div>
                   ))}

@@ -171,7 +171,7 @@ export default function Products() {
                     
                     <div className="flex justify-between items-center">
                       <div className="flex items-center">
-                        <i class="fa-solid fa-star text-yellow-400 mr-1"></i>
+174:                        <i className="fa-solid fa-star text-yellow-400 mr-1"></i>
                         <span className="font-semibold">{product.rating}</span>
                       </div>
                       <span className="text-xl font-bold text-blue-900">${product.price.toFixed(2)}</span>
