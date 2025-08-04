@@ -126,8 +126,8 @@ export default function ProductDetail() {
   const [selectedImage, setSelectedImage] = useState<any>(() => {
     // Set initial selected image to product main image
     return {
-      imageUrl: product.imageUrl,
-      description: product.name
+  imageUrl: product?.imageUrl || '',
+  description: product?.name || ''
     };
   });
   
@@ -221,8 +221,8 @@ export default function ProductDetail() {
                  <div className="flex space-x-3 overflow-x-auto pb-2">
                    <div 
                      onClick={() => setSelectedImage({
-                       imageUrl: product.imageUrl,
-                       description: product.name
+  imageUrl: product?.imageUrl || '',
+  description: product?.name || ''
                      })}
                      className={`flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden cursor-pointer border-2 ${selectedImage.imageUrl === product.imageUrl ? 'border-blue-600' : 'border-transparent hover:border-gray-300'}`}
                    >

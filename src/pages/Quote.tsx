@@ -86,7 +86,7 @@ export default function Quote() {
     
     // Clear error when field is modified
     if (errors[name]) {
-      setErrors(prev => ({ ...prev, [name]: undefined }));
+      setErrors((prev: Record<string, string>) => ({ ...prev, [name]: undefined }));
     }
   };
   

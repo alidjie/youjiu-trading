@@ -335,7 +335,7 @@ export default function About() {
                   <span className="text-blue-200">Taizhou, Zhejiang Province, China</span>
                 </li>
                 <li className="flex items-center">
-                  <i class="fa-solid fa-phone text-blue-300 mr-3"></i>
+                   <i className="fa-solid fa-phone text-blue-300 mr-3"></i>
                   <span className="text-blue-200">+86 123 4567 8910</span>
                 </li>
                  <li className="flex items-center">
@@ -343,7 +343,7 @@ export default function About() {
                     <span className="text-blue-200">info@aluew.com</span>
                        <div className="mt-6">
                          <a href="https://www.aluew.com" className="text-white hover:text-blue-300 transition-colors">
-                       <i class="fa-solid fa-globe mr-2"></i>Visit Our Official Website
+                        <i className="fa-solid fa-globe mr-2"></i>Visit Our Official Website
                      </a>
                    </div>
                 </li>

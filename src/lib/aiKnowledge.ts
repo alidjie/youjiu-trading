@@ -1,7 +1,9 @@
 // AI客服知识库
 interface FAQItem {
   question: string;
-  answer: Record<string, string>;
+  answer: {
+    [key: string]: string;
+  };
   keywords: string[];
   category: string;
 }
