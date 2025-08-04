@@ -83,8 +83,8 @@ export default function About() {
             </nav>
             
             {/* Mobile menu button */}
-            <button className="md:hidden text-blue-900">
-              <i class="fa-solid fa-bars text-xl"></i>
+               <button className="md:hidden text-blue-900">
+               <i className="fa-solid fa-bars text-xl"></i>
             </button>
           </div>
         </div>
@@ -139,8 +139,8 @@ export default function About() {
           <div className="container mx-auto px-4 md:px-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition-shadow">
-                <div className="text-blue-600 text-4xl mb-6">
-                  <i class="fa-solid fa-compass"></i>
+                     <div className="text-blue-600 text-4xl mb-6">
+                       <i className="fa-solid fa-compass"></i>
                 </div>
                 <h3 className="text-2xl font-bold text-blue-900 mb-4">Our Mission</h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
@@ -149,8 +149,8 @@ export default function About() {
               </div>
               
               <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition-shadow">
-                <div className="text-blue-600 text-4xl mb-6">
-                  <i class="fa-solid fa-eye"></i>
+                     <div className="text-blue-600 text-4xl mb-6">
+                       <i className="fa-solid fa-eye"></i>
                 </div>
                 <h3 className="text-2xl font-bold text-blue-900 mb-4">Our Vision</h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
@@ -341,8 +341,8 @@ export default function About() {
                 <li className="flex items-center">
                   <i class="fa-solid fa-envelope text-blue-300 mr-3"></i>
                    <span className="text-blue-200">info@aluew.com</span>
-                   <div class="mt-6">
-                     <a href="https://www.aluew.com" class="text-white hover:text-blue-300 transition-colors">
+                       <div className="mt-6">
+                         <a href="https://www.aluew.com" className="text-white hover:text-blue-300 transition-colors">
                        <i class="fa-solid fa-globe mr-2"></i>Visit Our Official Website
                      </a>
                    </div>

@@ -1,5 +1,3 @@
-import { Language } from '@/contexts/LanguageContext';
-
 // 翻译文本接口定义
 interface Translations {
   [key: string]: {

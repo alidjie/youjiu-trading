@@ -34,7 +34,7 @@ export default function App() {
   };
 
   // Check for stored user data on app load
-  useState(() => {
+  useEffect(() => {
     const storedUser = localStorage.getItem('user');
     if (storedUser) {
       try {

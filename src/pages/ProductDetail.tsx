@@ -130,7 +130,6 @@ export default function ProductDetail() {
       description: product.name
     };
   });
-  const [inStock, setInStock] = useState(true);
   
    
   // Handle scroll events for navbar styling

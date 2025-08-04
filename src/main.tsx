@@ -10,10 +10,10 @@ if (import.meta.env.DEV) {
   console.log('Tailwind CSS loaded successfully in development mode');
 }
  
- // 确保Tailwind CSS正确加载
- if (process.env.NODE_ENV === 'development') {
-   console.log('Tailwind CSS loaded successfully');
- }
+  // 确保Tailwind CSS正确加载
+  if (import.meta.env.DEV) {
+    console.log('Tailwind CSS loaded successfully');
+  }
 
 // 从localStorage获取保存的语言或使用默认语言
 const savedLang = localStorage.getItem('preferred_language') || 'en';

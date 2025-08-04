@@ -18,7 +18,7 @@ export function Empty({
       className
     )}>
       <div className="text-gray-400 text-6xl mb-4">
-        <i class={icon}></i>
+        <i className={icon}></i>
       </div>
       <h3 className="text-xl font-medium text-gray-700 mb-2">Nothing here</h3>
       <p className="text-gray-500 max-w-md">{message}</p>
