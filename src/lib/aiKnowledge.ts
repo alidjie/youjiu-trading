@@ -1,7 +1,7 @@
 // AI客服知识库
 interface FAQItem {
   question: string;
-  answer: string | Record<string, string>;
+  answer: Record<string, string>;
   keywords: string[];
   category: string;
 }
@@ -78,20 +78,20 @@ export function getAnswer(question: string, language: string = 'en'): string {
   );
   
   // 如果找到匹配项，返回对应语言的答案，否则返回默认回复
-     if (matchedItem && matchedItem.answer) {
-       // @ts-expect-error 处理动态语言键访问
-        return matchedItem.answer[language] || matchedItem.answer['en'];
-     } else {
-     const defaultResponses: Record<string, string> = {
+  if (matchedItem) {
+    // Return the translated answer for the requested language
+    return matchedItem.answer[language] || matchedItem.answer['en'];
+  } else {
+    const defaultResponses: Record<string, string> = {
       en: "Thank you for your inquiry. We need to further confirm your question. Please describe your needs in detail through the contact form or email (info@aluew.com), and our customer service team will reply to you as soon as possible.",
       fr: "Merci pour votre demande. Nous devons confirmer davantage votre question. Veuillez décrire vos besoins en détail via le formulaire de contact ou par e-mail (info@aluew.com), et notre équipe de service clientèle vous répondra dans les plus brefs délais.",
       de: "Vielen Dank für Ihre Anfrage. Wir müssen Ihre Frage weiter bestätigen. Bitte beschreiben Sie Ihre Anforderungen im Detail über das Kontaktformular oder per E-Mail (info@aluew.com), und unser Kundenservice wird Sie so schnell wie möglich antworten.",
-      es: "Gracias por su consulta. Necesitamos confirmar进一步 su pregunta. Por favor, describa sus necesidades en detalle a través del formulario de contacto o correo electrónico (info@aluew.com), y nuestro equipo de atención al cliente le responderá lo antes posible.",
+      es: "Gracias por su consulta. Necesitamos confirmar su pregunta. Por favor, describa sus necesidades en detalle a través del formulario de contacto o correo electrónico (info@aluew.com), y nuestro equipo de atención al cliente le responderá lo antes posible.",
       ja: "お問い合わせありがとうございます。ご質問についてはさらに確認が必要ですので、お問い合わせフォームまたはメール(info@aluew.com)より詳細なご要望をお知らせください。サービスチームが儘早にご返信いたします。",
       ar: "شكرًا لاستفسارك. نحتاج إلى تأكيد مزيد من سؤالك. يرجى وصف احتياجاتك بالتفصيل من خلال نموذج الاتصال أو البريد الإلكتروني (info@aluew.com) ، وسيرد فريق خدمة العملاء لدينا عليك في أقرب وقت ممكن.",
       ru: "Благодарим за ваш запрос. Нам нужно дополнительно подтвердить ваш вопрос. Пожалуйста, опишите ваши нужды в деталях через форму обратной связи или по электронной почте (info@aluew.com), и наш отдел обслуживания клиентов свяжется с вами в ближайшее время.",
       it: "Grazie per la vostra richiesta. Abbiamo bisogno di confermare ulteriormente la vostra domanda. Si prega di descrivere i vostri bisogni in dettaglio tramite il modulo di contatto o l'email (info@aluew.com), e il nostro team di servizio clienti vi risponderà il prima possibile.",
-      pt: "Obrigado pelo seu contato. Precisamos confirmar进一步 sua pergunta. Por favor, descreva suas necessidades em detalhes por meio do formulário de contato ou e-mail (info@aluew.com), e nossa equipe de atendimento ao cliente responderá o mais rápido possível."
+      pt: "Obrigado pelo seu contato. Precisamos confirmar sua pergunta. Por favor, descreva suas necessidades em detalhes por meio do formulário de contato ou e-mail (info@aluew.com), e nossa equipe de atendimento ao cliente responderá o mais rápido possível."
     };
     
     return defaultResponses[language] || defaultResponses['en'];

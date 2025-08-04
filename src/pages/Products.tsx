@@ -104,9 +104,9 @@ export default function Products() {
             </nav>
             
             {/* Mobile menu button */}
-            <button className="md:hidden text-blue-900">
-              <i class="fa-solid fa-bars text-xl"></i>
-            </button>
+             <button className="md:hidden text-blue-900">
+               <i className="fa-solid fa-bars text-xl"></i>
+             </button>
           </div>
         </div>
       </header>
@@ -171,23 +171,23 @@ export default function Products() {
                     
                     <div className="flex justify-between items-center">
                        <div className="flex items-center">
-174:                        <i className="fa-solid fa-star text-yellow-400 mr-1"></i>
+                         <i className="fa-solid fa-star text-yellow-400 mr-1"></i>
                          <span className="font-semibold">{product.rating}</span>
-                      </div>
-                      <span className="text-xl font-bold text-blue-900">${product.price.toFixed(2)}</span>
-                    </div>
-                    
-                    <div className="mt-6">
-                      <a 
-                        href={`/products/${product.id}`}
-                        className="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2 rounded-lg transition-colors"
-                      >
-                        View Details
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              ))}
+                       </div>
+                       <span className="text-xl font-bold text-blue-900">${product.price.toFixed(2)}</span>
+                     </div>
+                     
+                     <div className="mt-6">
+                       <a 
+                         href={`/products/${product.id}`}
+                         className="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2 rounded-lg transition-colors"
+                       >
+                         View Details
+                       </a>
+                     </div>
+                   </div>
+                 </div>
+               ))}
             </div>
           </div>
         </section>

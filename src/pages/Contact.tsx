@@ -440,9 +440,9 @@ export default function Contact() {
                 <li className="flex items-center">
                   <i class="fa-solid fa-envelope text-blue-300 mr-3"></i>
                    <span className="text-blue-200">info@aluew.com</span>
-                   <div class="mt-6">
-                     <a href="https://www.aluew.com" class="text-white hover:text-blue-300 transition-colors">
-                       <i class="fa-solid fa-globe mr-2"></i>https://www.aluew.com
+                   <div className="mt-6">
+                     <a href="https://www.aluew.com" className="text-white hover:text-blue-300 transition-colors">
+                       <i className="fa-solid fa-globe mr-2"></i>https://www.aluew.com
                      </a>
                    </div>
                 </li>

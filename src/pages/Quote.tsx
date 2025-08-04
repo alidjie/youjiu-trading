@@ -432,7 +432,7 @@ export default function Quote() {
                 <div className="space-y-8">
                   <div className="bg-blue-50 p-6 rounded-xl shadow-sm">
                     <div className="text-blue-600 text-2xl mb-4">
-                      <i class="fa-solid fa-clock"></i>
+                      <i className="fa-solid fa-clock"></i>
                     </div>
                     <h3 className="text-xl font-semibold text-blue-900 mb-2">Fast Response Time</h3>
                     <p className="text-gray-700">
@@ -442,7 +442,7 @@ export default function Quote() {
                   
                   <div className="bg-blue-50 p-6 rounded-xl shadow-sm">
                     <div className="text-blue-600 text-2xl mb-4">
-                      <i class="fa-solid fa-hand-holding-dollar"></i>
+                      <i className="fa-solid fa-hand-holding-dollar"></i>
                     </div>
                     <h3 className="text-xl font-semibold text-blue-900 mb-2">Competitive Pricing</h3>
                     <p className="text-gray-700">
