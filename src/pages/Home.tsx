@@ -271,7 +271,7 @@ All our products meet international quality standards and are backed by our comp
               </p>
               <div className="flex space-x-4">
                 <a href="#" className="text-blue-200 hover:text-white transition-colors">
-                  <i class="fa-brands fa-linkedin text-xl"></i>
+                  <i className="fa-brands fa-linkedin text-xl"></i>
                 </a>
                 <a href="#" className="text-blue-200 hover:text-white transition-colors">
                   <i class="fa-brands fa-facebook text-xl"></i>

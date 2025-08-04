@@ -1,7 +1,7 @@
 // AI客服知识库
-export interface FAQItem {
+interface FAQItem {
   question: string;
-  answer: string;
+  answer: string | Record<string, string>;
   keywords: string[];
   category: string;
 }

@@ -351,7 +351,7 @@ export default function Quote() {
                         >
                           {isSubmitting ? (
                             <>
-                              <i class="fa-solid fa-spinner fa-spin mr-2"></i> Submitting...
+                              <i className="fa-solid fa-spinner fa-spin mr-2"></i> Submitting...
                             </>
                           ) : (
                             <>

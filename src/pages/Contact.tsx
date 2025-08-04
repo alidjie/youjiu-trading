@@ -221,7 +221,7 @@ export default function Contact() {
                   <h3 className="text-xl font-semibold text-blue-900 mb-4">Follow Us</h3>
                   <div className="flex space-x-4">
                     <a href="#" className="bg-blue-600 hover:bg-blue-700 text-white w-12 h-12 rounded-full flex items-center justify-center transition-colors">
-                      <i class="fa-brands fa-linkedin"></i>
+                      <i className="fa-brands fa-linkedin"></i>
                     </a>
                     <a href="#" className="bg-blue-600 hover:bg-blue-700 text-white w-12 h-12 rounded-full flex items-center justify-center transition-colors">
                       <i class="fa-brands fa-facebook"></i>
