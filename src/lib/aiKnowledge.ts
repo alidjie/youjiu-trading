@@ -6,8 +6,8 @@ interface FAQItem {
   keywords: string[];
   category: string;
 }
- 
-// 知识库数据定义
+
+// 知识库数据定义 - 包含产品、服务、订单等常见问题
 export const knowledgeBase: FAQItem[] = [
   {
     question: "你们提供哪些产品？",
@@ -83,7 +83,6 @@ export const knowledgeBase: FAQItem[] = [
       ja: "標準製品の納期は通常15-20日、カスタム製品は25-35日です。これは注文数量と製品の複雑さによって異なります。注文確認後、正確な生産と納期スケジュールを提供いたします。",
       ar: "مدة توصيل المنتجات القياسية عادة 15-20 يومًا، والمنتجات المخصصة 25-35 يومًا، اعتمادًا على كمية الطلب وتعقيد المنتج. سأقدم جدول إنتاج وتوصيل دقيق بعد تأكيد الطلب.",
       ru: "Срок доставки стандартных продуктов обычно 15-20 дней, а для индивидуальных продуктов 25-35 дней в зависимости от количества заказа и сложности продукта. После подтверждения заказа я предоставлю точный график производства и доставки.",
-
       it: "Il tempo di consegna per i prodotti standard è solitamente 15-20 giorni e per i prodotti personalizzati 25-35 giorni, a seconda della quantità ordinata e della complessità del prodotto. Fornirò un programma di produzione e consegna accurato dopo la conferma dell'ordine.",
       pt: "O prazo de entrega para produtos padrão é geralmente de 15-20 dias e para produtos personalizados de 25-35 dias, dependendo da quantidade encomendada e complexidade do produto. Fornecerei um cronograma de produção e entrega preciso após a confirmação do pedido."
     },
@@ -111,7 +110,7 @@ export const knowledgeBase: FAQItem[] = [
     answer: {
       en: "Yes, all our products comply with ISO 9001 quality management system standards and have passed CE and RoHS certifications. We conduct strict quality inspections on each batch of products to ensure they meet customer requirements.",
       fr: "Oui, tous nos produits répondent aux normes du système de management de la qualité ISO 9001 et ont passé les certifications CE et RoHS. Nous effectuons des inspections de qualité strictes sur chaque lot de produits pour nous assurer qu'ils répondent aux exigences des clients.",
-      de: "Ja, alle unsere Produkte entsprechen den Standards des ISO 9001-Qualitätsmanagementsystems und haben die CE- und RoHS-Zertifizierungen bestanden. Wir führen strenge Qualitätskontrollen für jede Produktcharge durch, um sicherzustellen, dass sie den Kundenanforderungen entsprechen.",
+      de: "Ja, wir bieten umfassende OEM-Dienstleistungen an. Wir können Produkte gemäß Ihren spezifischen Anforderungen anpassen, einschließlich Design, Materialauswahl, Produktion und Verpackung. Kontaktieren Sie uns für detaillierte OEM-Zusammenarbeitpläne.",
       es: "Sí, todos nuestros productos cumplen con los estándares del sistema de gestión de calidad ISO 9001 y han pasado las certificaciones CE y RoHS. Realizamos rigurosas inspecciones de calidad en cada lote de productos para garantizar que cumplan con los requisitos de los clientes.",
       ja: "はい、当社のすべての製品はISO 9001品質管理システムの基準に準拠しており、CEおよびRoHS認証を取得しています。各製品ロットに対して厳格な品質検査を実施し、顧客の要求を満たすようにしています。",
       ar: "نعم، جميع منتجاتنا تُتوافق مع معايير نظام إدارة الجودة ISO 9001 وقد прошла الشهادات CE و RoHS. نحن نجري فحوصات جودة صارمة على كل دفعة من المنتجات لضمان أنها تُلبي متطلبات العملاء.",
@@ -140,7 +139,7 @@ export const knowledgeBase: FAQItem[] = [
   }
 ];
 
-// 问题匹配函数
+// 问题匹配函数 - 根据关键词查找最相关的知识库条目
 export function getAnswer(question: string, language: string = 'en'): string {
   const lowerQuestion = question.toLowerCase();
   
