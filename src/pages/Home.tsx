@@ -229,7 +229,7 @@ All our products meet international quality standards and are backed by our comp
                 className="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold text-lg"
               >
                 View All Products
-                <i class="fa-solid fa-arrow-right ml-2"></i>
+                <i className="fa-solid fa-arrow-right ml-2"></i>
               </Link>
             </div>
           </div>

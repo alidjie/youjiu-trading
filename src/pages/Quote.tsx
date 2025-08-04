@@ -45,7 +45,6 @@ export default function Quote() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [quoteSummary, setQuoteSummary] = useState<any>(null);
   const { currentUser } = useContext(AuthContext);
-  const navigate = useNavigate();
   
   // Handle scroll events for navbar styling
   useEffect(() => {

@@ -20,18 +20,18 @@ export const knowledgeBase: FAQItem[] = [
     keywords: ["oem", "定制", "加工", "合作"],
     category: "services"
   },
-    {
-    question: "最小起订量(MOQ)是多少？",
-    answers: {
-      en: "Our minimum order quantity varies by product type: typically 500 kg for magnetic materials, 50 pieces for magnetic filters, 1000 meters for enameled wire, and 10 units for agricultural machinery. For large customers or long-term partners, we can consider reducing MOQ requirements.",
-      fr: "Notre quantité de commande minimale varie selon le type de produit : généralement 500 kg pour les matériaux magnétiques, 50 pièces pour les filtres magnétiques, 1000 mètres pour le fil émaillé et 10 unités pour les machines agricoles.",
-      de: "Unsere Mindestbestellmenge variiert je nach Produkttyp: normalerweise 500 kg für Magnetmaterialien, 50 Stück für Magnetfilter, 1000 Meter für Emailldraht und 10 Einheiten für landwirtschaftliche Maschinen.",
-      es: "Nuestra cantidad mínima de pedido varía según el tipo de producto: normalmente 500 kg para materiales magnéticos, 50 piezas para filtros magnéticos, 1000 metros para alambre esmaltado y 10 unidades para maquinaria agrícola.",
-      ja: "最小注文量は製品タイプによって異なります：磁性材料は通常500kg、磁性フィルターは50個、エナメル線は1000メートル、農業機械は10台です。大口顧客または長期的なパートナーの場合は、MOQ要件を緩和することを検討できます。",
-      ar: "كمية الطلب الدنيا تختلف حسب نوع المنتج: عادةً 500 كجم للمواد المغناطيسية، و50 قطعة للمرشحات المغناطيسية، و1000 مترًا للسلك المعدني، و10 وحدات للمعدنات الزراعية.",
-      ru: "Наша минимальная партия заказа зависит от типа продукта: обычно 500 кг для магнитных материалов, 50 штук для магнитных фильтров, 1000 метров для эмалированного провода и 10 единиц для сельскохозяйственной техники.",
-      it: "La nostra quantità minima di ordine varia in base al tipo di prodotto: tipicamente 500 kg per materiali magnetici, 50 pezzi per filtri magnetici, 1000 metri per filo smaltato e 10 unità per macchinari agricoli.",
-      pt: "Nossa quantidade mínima de pedido varia de acordo com o tipo de produto: tipicamente 500 kg para materiais magnéticos, 50 peças para filtros magnéticos, 1000 metros para fio esmaltado e 10 unidades para maquinário agrícola."
+     {
+     question: "最小起订量(MOQ)是多少？",
+     answer: {
+       en: "Our minimum order quantity varies by product type: typically 500 kg for magnetic materials, 50 pieces for magnetic filters, 1000 meters for enameled wire, and 10 units for agricultural machinery. For large customers or long-term partners, we can consider reducing MOQ requirements.",
+       fr: "Notre quantité de commande minimale varie selon le type de produit : généralement 500 kg pour les matériaux magnétiques, 50 pièces pour les filtres magnétiques, 1000 mètres pour le fil émaillé et 10 unités pour les machines agricoles.",
+       de: "Unsere Mindestbestellmenge variiert je nach Produkttyp: normalerweise 500 kg für Magnetmaterialien, 50 Stück für Magnetfilter, 1000 Meter für Emailldraht und 10 Einheiten für landwirtschaftliche Maschinen.",
+       es: "Nuestra cantidad mínima de pedido varía según el tipo de producto: normalmente 500 kg para materiales magnéticos, 50 piezas para filtros magnéticos, 1000 metros para alambre esmaltado y 10 unidades para maquinaria agrícola.",
+       ja: "最小注文量は製品タイプによって異なります：磁性材料は通常500kg、磁性フィルターは50個、エナメル線は1000メートル、農業機械は10台です。大口顧客または長期的なパートナーの場合は、MOQ要件を緩和することを検討できます。",
+       ar: "كمية الطلب الدنيا تختلف حسب نوع المنتج: عادةً 500 كجم للمواد المغناطيسية، و50 قطعة للمرشحات المغناطيسية، و1000 مترًا للسلك المعدني، و10 وحدات للمعدنات الزراعية.",
+       ru: "Наша минимальная партия заказа зависит от типа продукта: обычно 500 кг для магнитных материалов, 50 штук для магнитных фильтров, 1000 метров для эмалированного провода и 10 единиц для сельскохозяйственной техники.",
+       it: "La nostra quantità minima di ordine varia in base al tipo di prodotto: tipicamente 500 kg per materiali magnetici, 50 pezzi per filtri magnetici, 1000 metri per filo smaltato e 10 unità per macchinari agricoli.",
+       pt: "Nossa quantidade mínima de pedido varia de acordo com o tipo de produto: tipicamente 500 kg para materiais magnéticos, 50 peças para filtros magnéticos, 1000 metros para fio esmaltado e 10 unidades para maquinário agrícola."
     },
     keywords: ["moq", "最小", "起订量", "数量"],
     category: "order"
@@ -78,10 +78,10 @@ export function getAnswer(question: string, language: string = 'en'): string {
   );
   
   // 如果找到匹配项，返回对应语言的答案，否则返回默认回复
-  if (matchedItem && matchedItem.answers) {
-    // @ts-expect-error 处理动态语言键访问
-    return matchedItem.answers[language] || matchedItem.answers['en'];
-  } else {
+   if (matchedItem && matchedItem.answer) {
+     // @ts-expect-error 处理动态语言键访问
+     return matchedItem.answer[language] || matchedItem.answer['en'];
+   } else {
     const defaultResponses: Record<string, string> = {
       en: "Thank you for your inquiry. We need to further confirm your question. Please describe your needs in detail through the contact form or email (info@aluew.com), and our customer service team will reply to you as soon as possible.",
       fr: "Merci pour votre demande. Nous devons confirmer davantage votre question. Veuillez décrire vos besoins en détail via le formulaire de contact ou par e-mail (info@aluew.com), et notre équipe de service clientèle vous répondra dans les plus brefs délais.",

@@ -89,7 +89,7 @@ export default function Contact() {
   }, [currentUser]);
   
   // Handle form input changes
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>, prev: any) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
     

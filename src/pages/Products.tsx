@@ -220,7 +220,7 @@ export default function Products() {
               </p>
               <div className="flex space-x-4">
                 <a href="#" className="text-blue-200 hover:text-white transition-colors">
-                  <i class="fa-brands fa-linkedin text-xl"></i>
+                  <i className="fa-brands fa-linkedin text-xl"></i>
                 </a>
                 <a href="#" className="text-blue-200 hover:text-white transition-colors">
                   <i class="fa-brands fa-facebook text-xl"></i>

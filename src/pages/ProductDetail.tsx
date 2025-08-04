@@ -620,7 +620,7 @@ export default function ProductDetail() {
                            href={`/products/${relatedProduct.id}`}
                            className="text-blue-600 hover:text-blue-800 transition-colors"
                          >
-                           View Details <i class="fa-solid fa-arrow-right ml-1"></i>
+                           View Details <i className="fa-solid fa-arrow-right ml-1"></i>
                          </a>
                        </div>
                      </div>
