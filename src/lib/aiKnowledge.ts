@@ -103,14 +103,14 @@ export const knowledgeBase: FAQItem[] = [
       pt: "Você pode enviar uma solicitação de orçamento por meio de nossa página 'Get Quote' no site ou entrar em contato diretamente com minha equipe de vendas. Para fornecer um orçamento preciso, informe modelo do produto, especificações, quantidade e requisitos especiais (se houver). Normalmente respondo à sua solicitação de orçamento dentro de 24 horas."
     },
     keywords: ["报价", "价格", "quote", "cost"],
-    category: "quote"
+    category:"quote"
   },
   {
     question: "你们的产品质量有保障吗？",
     answer: {
       en: "Yes, all our products comply with ISO 9001 quality management system standards and have passed CE and RoHS certifications. We conduct strict quality inspections on each batch of products to ensure they meet customer requirements.",
       fr: "Oui, tous nos produits répondent aux normes du système de management de la qualité ISO 9001 et ont passé les certifications CE et RoHS. Nous effectuons des inspections de qualité strictes sur chaque lot de produits pour nous assurer qu'ils répondent aux exigences des clients.",
-      de: "Ja, wir bieten umfassende OEM-Dienstleistungen an. Wir können Produkte gemäß Ihren spezifischen Anforderungen anpassen, einschließlich Design, Materialauswahl, Produktion und Verpackung. Kontaktieren Sie uns für detaillierte OEM-Zusammenarbeitpläne.",
+      de: "Ja, alle unsere Produkte entsprechen den Standards des ISO 9001-Qualitätsmanagementsystems und haben die CE- und RoHS-Zertifizierungen bestanden. Wir führen strenge Qualitätskontrollen für jede Produktcharge durch, um sicherzustellen, dass sie den Kundenanforderungen entsprechen.",
       es: "Sí, todos nuestros productos cumplen con los estándares del sistema de gestión de calidad ISO 9001 y han pasado las certificaciones CE y RoHS. Realizamos rigurosas inspecciones de calidad en cada lote de productos para garantizar que cumplan con los requisitos de los clientes.",
       ja: "はい、当社のすべての製品はISO 9001品質管理システムの基準に準拠しており、CEおよびRoHS認証を取得しています。各製品ロットに対して厳格な品質検査を実施し、顧客の要求を満たすようにしています。",
       ar: "نعم، جميع منتجاتنا تُتوافق مع معايير نظام إدارة الجودة ISO 9001 وقد прошла الشهادات CE و RoHS. نحن نجري فحوصات جودة صارمة على كل دفعة من المنتجات لضمان أنها تُلبي متطلبات العملاء.",
